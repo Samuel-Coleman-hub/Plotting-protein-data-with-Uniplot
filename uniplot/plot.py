@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt
 
 def plot_bar_show(d):
+    """Returns a bar chart of given values"""
     r = range(0, len(d))
     ## Prepare a figure
     plt.figure()

@@ -1,4 +1,5 @@
 def average_len(records):
+    """Returns average protein length"""
     total = 0
     for i in range(len(records)):
         total = total + len(records[i])
