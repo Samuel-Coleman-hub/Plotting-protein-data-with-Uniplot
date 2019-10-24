@@ -7,6 +7,7 @@ species. It has the functionality to print out a list of the proteins in the tax
 show the average length of the proteins and create a graph to show the average length of different
 proteins.
 
+
 How to use
 -----------------
 To use this program you will need to enter specific commands into the terminal.
@@ -26,5 +27,6 @@ This will print out the average length of the proteins.
 "pipenv run python uniplot.py plot-average-by-taxa"
 ```
 This will plot a graph showing the average protein length by taxonomy.
+
 
 
