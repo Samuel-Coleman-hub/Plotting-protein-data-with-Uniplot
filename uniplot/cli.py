@@ -1,5 +1,6 @@
-import gzip
 from Bio import SeqIO
+import gzip
+
 
 def cli():
     handle = gzip.open("uniprot_receptor.xml.gz")
