@@ -8,4 +8,4 @@ before_script:
 build:
   script:
     - echo "Success"
-    -pipenv run pytest -W ignore
+    - pipenv run pytest -W ignore
