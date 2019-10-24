@@ -18,6 +18,9 @@ def average(args):
     print("Average Length is {}".format(
         analysis.average_len(parse.uniprot_seqrecords(LOC))))
 
+def plot_average_by_taxa(args):
+    av = analysis.average_len_taxa(parse.uniprot_seqrecords(LOC))
+    plot.plot_bar_show(av)
 
 def cli():
     ## Create a new parser
@@ -29,6 +32,9 @@ def cli():
     subparsers.add_parser("dump", help="To dump a list of all proteins").set_defaults(func=dump)
     subparsers.add_parser("list", help="To display a formatted list of all proteins").set_defaults(func=names)
     subparsers.add_parser("average", help="To print the average length of the proteins").set_defaults(func=average)
+    subparsers.add_parser("plot-average-by-taxa",
+                          help="Displays a graph of the average length of proteins by taxonomy").set_defaults(
+        func=plot_average_by_taxa)
 
 
     ## Parse the command line

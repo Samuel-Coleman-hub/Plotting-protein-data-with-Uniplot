@@ -1,1 +1,1 @@
-This project is modified by Samuel Coleman, from a practical by Phillip Lord, Copyright, 2019, Newcastle University
+This project is written by Samuel Coleman, based on a practical by Phillip Lord, Copyright, 2019, Samuel Coleman
