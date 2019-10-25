@@ -1,4 +1,3 @@
-import pytest
 import uniplot.analysis
 import uniplot.parse
 
