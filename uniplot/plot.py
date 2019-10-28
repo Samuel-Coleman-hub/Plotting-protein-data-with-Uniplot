@@ -21,11 +21,11 @@ def plot_bar_show(d):
 def plot_pie_show(d):
     """Returns a pie chart of given values"""
     r = range(0, len(d))
-    labels = plt.xticks(r, d.keys())
-    sizes = plt.pie(r, d.values())
+    labels = d.keys()
+    sizes = d.values()
 
     fig1, ax1 = plt.subplots()
-    ax1.pie(sizes, explode=0, labels=labels, autopct='%1.1f%%', shadow=True, startangle=90)
+    ax1.pie(sizes, labels=labels, autopct='%1.1f%%', shadow=True, startangle=90)
     ax1.axis('equal')
     plt.show()
 

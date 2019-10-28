@@ -28,7 +28,7 @@ def plot_average_by_taxa(args):
 
 def plot_average_by_taxa_pie(args):
     """Returns pie chart showing average protein length by taxonomy"""
-    av = analysis.average_len_taxa(parse.uniprot_seqrecords(LOC))
+    av = analysis.total_proteins(parse.uniprot_seqrecords(LOC))
     plot.plot_pie_show(av)
 
 def cli():
