@@ -27,6 +27,11 @@ This will print out the average length of the proteins.
 "pipenv run python uniplot.py plot-average-by-taxa"
 ```
 This will plot a graph showing the average protein length by taxonomy.
+```
+"pipenv run python uniplot.py --file-location `File name/address` `name of argument'"
+```
+This will allow you to pick the file that you wish to run the program on and also the argument that you wish to run.
+
 
 
 
