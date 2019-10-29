@@ -23,12 +23,12 @@ def average(args):
 
 def plot_average_by_taxa(args):
     """Returns graph showing average protein length by taxonomy"""
-    av = analysis.average_len_taxa(parse.uniprot_seqrecords(LOC))
+    av = analysis.average_len_taxa(parse.uniprot_seqrecords(LOC), args.depth)
     plot.plot_bar_show(av)
 
 def plot_average_by_taxa_pie(args):
     """Returns pie chart showing average protein length by taxonomy"""
-    av = analysis.total_proteins(parse.uniprot_seqrecords(LOC))
+    av = analysis.total_proteins(parse.uniprot_seqrecords(LOC), args.depth)
     plot.plot_pie_show(av)
 
 def cli():
@@ -38,6 +38,7 @@ def cli():
     subparsers = parser.add_subparsers(help="Sub Command Help")
 
     parser.add_argument("--file-location", help="Allows you to pick the file for the program to run")
+    parser.add_argument("--depth", help="Change the amount of the taxa that is visible", type=int)
 
 
 
